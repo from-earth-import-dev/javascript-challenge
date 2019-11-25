@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>ALIENS-R-REAL</title>
+  </head>
+  <body>
+  	<nav class="navbar navbar-light bg-light">
+ 		<a class="navbar-brand" href="#">
+    		<img src="ufo_icon.png" width="30" height="30" class="d-inline-block align-top" alt=""> ALIENS-R-REAL
+  		</a>
+	</nav>
+
+    <div class="container">
+    	<div class="row text-center">
+    		<div class="col-md-12">
+    			<h1 style="margin-top:10px">UFO Sightings</h1>
+    			<h6 class="text-secondary">Seeing Is Believing</h6>
+        </div>
+    	</div>
+      <div class="row">
+        <div class="col-md-12 input-group mb-3">
+          <select class="col-md-3 input-group-prepend" id='dropSelector'>
+            <option selected>datetime</option>
+            <option value="city">city</option>
+            <option value="state">state</option>
+            <option value="country">country</option>
+            <option value="shape">shape</option>
+            <option value="durationMinutes">durationMinutes</option>
+            <option value="comments">comments</option>
+          </select>
+          <input id="searchInput" type="search" class="form-control col-md-9" id="exampleFormControlInput1" onkeyup="filterTable()">
+          </div>
+        </div>
+    	
+      <div class="row" >
+    		<div class="col-md-12">
+    			<!-- <h2 class="text-center">Sighting Archives</h2> -->
+    			<table id="sightingTable" class="table table-hover">
+    				<thead></thead>
+    				<tbody></tbody>
+    			</table>
+    		</div>
+    	</div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
